@@ -5,7 +5,8 @@
 
 var express = require('express')
   , routes = require('./routes')
-  , socket = require('socket.io');
+  , socket = require('socket.io')
+  , fs = require('fs');
 
 var app = module.exports = express.createServer();
 
@@ -43,3 +44,30 @@ io.sockets.on('connection', function (socket) {
     io.sockets.emit('new', data);
   });
 });
+
+var commandDir = './commands/';
+
+
+// use timer intervall to read periodically the commands dir
+setInterval(function() { 
+  fs.readdir(commandDir, function (err,files){
+    // step through all command files
+    for (var i=0; i<files.length;i++){
+      // copy file name so that async remove function can use reference
+      var _commandFile = JSON.parse( JSON.stringify( files[i] ) );
+
+      // read file content
+      var _commandContent = (fs.readFileSync(commandDir+files[i], 'utf8'));
+
+      // print content on console (for debug purposes only)
+      console.log(_commandFile + ': ' + _commandContent);
+
+      // send content to all registred clients
+      io.sockets.emit('new',_commandContent);
+      
+      // remove commandFile, use sync because otherwise the file might still exist in the next run
+      fs.unlinkSync(commandDir+files[i]);
+    }
+  });
+  console.log("setInterval: It's been one second!"); 
+}, 1000);
