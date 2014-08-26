@@ -1,0 +1,1000 @@
+ 1005  rm So 
+ 1006  ls -l
+ 1007  cat So 
+ 1008  rm So 
+ 1009  ls -l
+ 1010  rm -fr So 
+ 1011  cat So 
+ 1012  PROMPT_COMMAND="echo $previous_command > "/home/sascha/Projects/Bashapp/`date`""
+ 1013  ls -l
+ 1014  "test"
+ 1015  ls -l
+ 1016  date
+ 1017  date +%H
+ 1018  date +%D
+ 1019  date +%d
+ 1020  date +%d-$m
+ 1021  date +%d-%m-%yy
+ 1022  date +%d-%m-%y
+ 1023  date +$hh-%mm-%ss-%d-%m-%y
+ 1024  date +%hh-%mm-%ss-%d-%m-%y
+ 1025  date +%h-%mm-%ss-%d-%m-%y
+ 1026  date +%mm-%ss-%d-%m-%y
+ 1027  date +%m-%ss-%d-%m-%y
+ 1028  date +%m-%s-%d-%m-%y
+ 1029  date +%m-%S-%d-%m-%y
+ 1030  date +%M-%S-%d-%m-%y
+ 1031  date
+ 1032  date +%M-%S-%d-%m-%y
+ 1033  date +%H-%M-%S-%d-%m-%y
+ 1034  date +%H%M%S-%d-%m-%y
+ 1035  date +%d-%m-%y-%H%M%S
+ 1036  PROMPT_COMMAND="echo $previous_command > /home/sascha/Projects/Bashapp/`date +%d-%m-%y-%H%M%S`"
+ 1037  ls -al
+ 1038  cat 17-08-14-142303 
+ 1039  echo "test"
+ 1040  ls -al
+ 1041  cat 17-08-14-142303 
+ 1042  echo $previous_command 
+ 1043  trap 'previous_command=$this_command; this_command=$BASH_COMMAND' DEBUG
+ 1044  echo $previous_command 
+ 1045  echo "test"
+ 1046  echo $previous_command 
+ 1047  PROMPT_COMMAND="echo $previous_command"
+ 1048  ls -al
+ 1049  PROMPT_COMMAND="echo $previous_command"
+ 1050  echo $previous_command 
+ 1051  previous_command=""
+ 1052  trap 'previous_command=$this_command; this_command=$BASH_COMMAND' DEBUG
+ 1053  echo "blulb"
+ 1054  echo "test2
+ 1055  "
+ 1056  echo $previous_command 
+ 1057  ls -al
+ 1058  ./lastCmd.sh 
+ 1059  ls -al
+ 1060  date
+ 1061  ./lastCmd.sh 
+ 1062  ls -al
+ 1063  cat 17-08-14-14*
+ 1064  cat /tmp/history 
+ 1065  echo "a"
+ 1066  echo "b"
+ 1067  ./lastCmd.sh 
+ 1068  ls -al
+ 1069  cat 17-08-14-142303 
+ 1070  cat 17-08-14-14*
+ 1071  PROMPT_COMMAND="history >> /tmp/history; /home/sascha/Projects/Bashapp/lastCmd.sh"
+ 1072  echo "1"
+ 1073  echo "2"
+ 1074  echo "3"
+ 1075  rm -fr /tmp/history 
+ 1076  echo "4"
+ 1077  echo "5"
+ 1078  ls -al
+ 1079  cat 17-08-14-14*
+ 1080  echo "6"
+ 1081  ls -al
+ 1082  cat 17-08-14-143745
+ 1083  ls -al
+ 1084  cat  17-08-14-143756
+ 1085  cat 17-08-14-143747
+ 1086  cat 17-08-14-143745
+ 1087  ls -al
+ 1088  cat 17-08-14-143815
+ 1089  cat 17-08-14-143810
+ 1090  mkdir commands
+ 1091  rm -fr 17-08-14-14*
+ 1092  find commands/
+ 1093  ls -al 
+ 1094  find commands/
+ 1095  rm fr 1 
+ 1096  rm -fr 1
+ 1097  ls -al
+ 1098  rm -fr So 
+ 1099  find /home/sascha/Projects/Bashapp/commands/
+ 1100  ls -al
+ 1101  find commands/
+ 1102  cat commands/17-08-14-144228
+ 1103  find commands/
+ 1104  cat commands/17-08-14-144235
+ 1105  cat commands/17-08-14-144228
+ 1106  cat commands/17-08-14-144230
+ 1107  find commands/ | xargs cat
+ 1108  ls -al
+ 1109  find commands/ | xargs cat
+ 1110  ./lastCmd.sh 
+ 1111  find commands/ | xargs cat
+ 1112  find commands/ -type f | xargs cat
+ 1113  rm -fr commands/*
+ 1114  find commands/
+ 1115  cat commands/17-08-14-144426
+ 1116  ls -al 
+ 1117  find -type f commands/ | xargs cat
+ 1118  find -type f ./commands/ | xargs cat
+ 1119  find ./commands/ -type f | xargs cat
+ 1120  ./lastCmd.sh 
+ 1121  bool=true
+ 1122  find commands/
+ 1123  touch commands/commandsFile
+ 1124  cat commands/commandsFile 
+ 1125  echo "test2
+ 1126  "
+ 1127  cat commands/commandsFile 
+ 1128  echo "test3"
+ 1129  cat commands/commandsFile 
+ 1130  echo "test4"
+ 1131  cat commands/commandsFile 
+ 1132  history | grep PROMPT
+ 1133  cd ..
+ 1134  cd ../Repos/mates-www/
+ 1135  ls -l
+ 1136  cd mates-config/
+ 1137  node server.js 
+ 1138  ifconfig docker0
+ 1139  node server.js 
+ 1140  npm install node-router
+ 1141  node server.js 
+ 1142  exit
+ 1143  cd ../../
+ 1144  cd ..
+ 1145  cd Projects/ConfProvider/
+ 1146  ls -l
+ 1147  cd http-server/
+ 1148  ls -l
+ 1149  cat public/rabbitMQ.conf
+ 1150  ls -l
+ 1151  cat lib/http-server.js
+ 1152  cat public/rabbitMQ.conf
+ 1153  exit
+ 1154  echo "test"
+ 1155  echo "blulb"
+ 1156  ls -al
+ 1157  exit
+ 1158  cd Repos/
+ 1159  git clone https://github.com/ukhas/js-logtail.git
+ 1160  ls -l
+ 1161  cd js-logtail/
+ 1162  ls -l
+ 1163  cat logtail.html 
+ 1164  cat logtail.js 
+ 1165  ls -l
+ 1166  touch log
+ 1167  echo "blulb" > log
+ 1168  echo "blulb" >> log
+ 1169  ln -s /log log
+ 1170  ln -s log /log
+ 1171  sudo ln -s log /log
+ 1172  cat /log 
+ 1173  rm -fr /log 
+ 1174  ls -al  /log 
+ 1175  ls -l
+ 1176  sudo rm -fr /log
+ 1177  sudo ln -s ./log /log
+ 1178  ls -al /loA
+ 1179  ls -al /log
+ 1180  sudo rm -fr /log
+ 1181  sudo ln -s /home/sascha/Repos/js-logtail/log /log
+ 1182  ls -al /log 
+ 1183  echo "test" > log
+ 1184  LS -L
+ 1185  cat log
+ 1186  echo "test" >> log
+ 1187  echo "testfdsf as" >> log
+ 1188  echo "test" >> log
+ 1189  cd ..
+ 1190  cd Projects/
+ 1191  cd Bashapp/
+ 1192  ls -l
+ 1193  ls -al
+ 1194  rm 17-08-14-142*
+ 1195  ls -al
+ 1196  date
+ 1197  ls -al
+ 1198  cat 17-08-14-142931 
+ 1199  ls -al
+ 1200  rm 17-08-14-142931 
+ 1201  ls -al
+ 1202  cat 17-08-14-142931 
+ 1203  ls -al
+ 1204  cat 17-08-14-142931 
+ 1205  exit
+ 1206  cd .m2/
+ 1207  cd ..
+ 1208  cd mates-parent
+ 1209  cd mates-web-backend/
+ 1210  ls -l
+ 1211  cd target/
+ 1212  ls -al
+ 1213  cp mates-web-backend-0.0.1-SNAPSHOT.war ~/Docker/mates-www/java-web-backend/mates-web-backend.war 
+ 1214  cd ..
+ 1215  cd mates-jason/
+ 1216  ls -l
+ 1217  cp target/mates-jason-0.0.1-SNAPSHOT.one-jar.jar ~/Docker/mates-www/jason/mates-jason.jar 
+ 1218  cd ~/Docker/mates-www/jason/
+ 1219  ls -l
+ 1220  gedit Dockerfile
+ 1221  cat /media/sascha/0651FE757EA5F2E0/mates/Docker/mates-jason/Dockerfile
+ 1222  cat /media/sascha/0651FE757EA5F2E0/mates/Docker/mates-jason/start.sh
+ 1223  cp mates-jason.jar /media/sascha/0651FE757EA5F2E0/mates/Docker/mates-jason/mates-jason.jar 
+ 1224  cd ..
+ 1225  cd java-web-backend/
+ 1226  cp mates-web-backend.war /media/sascha/0651FE757EA5F2E0/mates/Docker/mates-java-backend/mates-web-backend.war 
+ 1227  cd /media/sascha/0651FE757EA5F2E0/mates/Docker/mates-jason/
+ 1228  ls -l
+ 1229  gedit Dockerfile.local 
+ 1230  ls -l
+ 1231  cp -r ~/Repos/mates-www/mates-config/ config
+ 1232  ls -al
+ 1233  find config/
+ 1234  cat config/config.js 
+ 1235  docker ps -a | grep mates-jason
+ 1236  docker ps -a | grep jason
+ 1237  docker build -t mates/jason:0.9.1 .
+ 1238  diff Dockerfile Dockerfile.cgi~ 
+ 1239  diff Dockerfile Dockerfile.cgi
+ 1240  mv Dockerfile Dockerfile.cgi
+ 1241  mv Dockerfile.local Dockerfile
+ 1242  docker build -t mates/jason:0.9.1 .
+ 1243  docker tag mates/jason:0.9.1 mates/jason:latest
+ 1244  docker run --name mates-jason -e HOST=172.17.42.1 -it mates/jason bash
+ 1245  docker rm mates-jason
+ 1246  cd ..
+ 1247  cd mates-java-backend/
+ 1248  cp -r ../mates-jason/config/ config
+ 1249  ls -l
+ 1250  gedit Dockerfile
+ 1251  mv Dockerfile Dockerfile.cgi
+ 1252  mv Dockerfile.local Dockerfile
+ 1253  gedit Dockerfile
+ 1254  ls -al
+ 1255  docker build -t mates/java-backend:0.9.1 .
+ 1256  docker tag mates/java-backend:0.9.1 mates/java-backend:latest
+ 1257  docker run rm mates-java-backend
+ 1258  docker rm mates-java-backend
+ 1259  docker run --name mates-java-backend -p 8085:8085 -e HOST=172.17.42.1 -it bash
+ 1260  docker run --name mates-java-backend -p 8085:8085 -e HOST=172.17.42.1 -it mates/java-backend bash
+ 1261  docker ps
+ 1262  docker run --name mates-java-backend -p 8088:8085 -e HOST=172.17.42.1 -it mates/java-backend bash
+ 1263  docker stop mates-java-backend
+ 1264  docker run --name mates-java-backend -p 8088:8085 -e HOST=172.17.42.1 -it mates/java-backend bash
+ 1265  docker stop b7e74763edf8.
+ 1266  docker rm b7e74763edf8.
+ 1267  docker rm mates-jbe
+ 1268  service docker restart
+ 1269  sudo service docker restart
+ 1270  docker ps -a | grep java
+ 1271  docker stop b7e74763edf8
+ 1272  docker rm b7e74763edf8
+ 1273  docker stop mates-java-backend
+ 1274  docker rm mates-java-backend
+ 1275  docker run --name mates-java-backend -p 8088:8085 -e HOST=172.17.42.1 -it mates/java-backend bash
+ 1276  docker rm mates-java-backend
+ 1277  docker run --name mates-java-backend -p 8088:8085 -e HOST=172.17.42.1 -it mates/java-backend bash
+ 1278  docker rm mates-java-backend
+ 1279  ls -l
+ 1280  cat Dockerfile
+ 1281  history | grep build
+ 1282  docker build -t mates/java-backend:0.9.1 .
+ 1283  history | grep tag
+ 1284  docker tag mates/java-backend:0.9.1 mates/java-backend:latest
+ 1285  history
+ 1286  docker run --name mates-java-backend -p 8088:8085 -e HOST=172.17.42.1 -it mates/java-backend bash
+ 1287  docker rm mates-java-backend
+ 1288  docker rm mates-rabbitmq
+ 1289  docker run --name mates-rabbitmq -p 5672:5672 -p 15672:15672 mates/rabbitmq 
+ 1290  docker run --name mates-rabbitmq -p 5672:5672 -p 15672:15672 -d mates/rabbitmq 
+ 1291  docker run --name mates-java-backend -p 8088:8085 -e HOST=172.17.42.1 -it mates/java-backend 
+ 1292  docker rm mates-java-backend
+ 1293  docker run --name mates-java-backend -p 8088:8085 -e HOST=172.17.42.1 -d mates/java-backend 
+ 1294  docker logs mates-java-backend
+ 1295  exit
+ 1296  docker ps
+ 1297  docker images
+ 1298  docker ps -a | grep registr
+ 1299  docker run sad_torvalds
+ 1300  docker start sad_torvalds
+ 1301  docker images | grep mates
+ 1302  cd /media/sascha/0651FE757EA5F2E0/mates/
+ 1303  ls -l
+ 1304  cd Docker/
+ 1305  ls -l
+ 1306  cd Maven-Builder/
+ 1307  ls -l
+ 1308  cat Dockerfile
+ 1309  cd ..
+ 1310  ls -l
+ 1311  cd mates-parent
+ 1312  ls -l
+ 1313  cd ..
+ 1314  ls l
+ 1315  ls -l
+ 1316  gedit mates-parent/mates-web-backend/src/main/webapp/WEB-INF/spring-servlet.xml
+ 1317  ls -l
+ 1318  docker ps -a | grep builder
+ 1319  docker rm mates-builder
+ 1320  docker run --name mates-builder -v /media/sascha/0651FE757EA5F2E0/mates:/data -v /media/sascha/0651FE757EA5F2E0/mates/.m2:/.m2 -it mates/builder bash
+ 1321  ifconfig docker0
+ 1322  docker stop mates-rabbitmq
+ 1323  docker rm mates-rabbitmq
+ 1324  exit
+ 1325  cd Repos/mates-www/
+ 1326  ls -l
+ 1327  cd mates-c
+ 1328  cd mates-config/
+ 1329  ls -l
+ 1330  cat npm-debug.log 
+ 1331  ls -l
+ 1332  node server.js
+ 1333  docker run --name test -it mates/jason bash
+ 1334  docker rm test
+ 1335  docker run --name test -e HOST=172.17.42.1 -it mates/jason bash
+ 1336  ifconfig docker0
+ 1337  sublime
+ 1338  history | grep subline
+ 1339  history | grep sublime
+ 1340  sublime > /dev/null 2>&1
+ 1341  bg
+ 1342  echo $HOST
+ 1343  HOST=172.17.42.1
+ 1344  cd Repos/mates-www/
+ 1345  ls -l
+ 1346  cd mates-c
+ 1347  cd mates-config/
+ 1348  ls -l
+ 1349  node config.js
+ 1350  echo $HOST
+ 1351  node config.js
+ 1352  export HOST=T=172.17.42.1
+ 1353  node config.js
+ 1354  export HOST=172.17.42.1
+ 1355  node config.js
+ 1356  cd /media/sascha/0651FE757EA5F2E0/
+ 1357  cd mates/
+ 1358  ls -l
+ 1359  cd Docker/
+ 1360  ls -l
+ 1361  cd mates-jason/
+ 1362  ls -l
+ 1363  gedit asl/soe_agent.asl
+ 1364  ls -l
+ 1365  docker build -t mates/jason:0.9.5.3 .
+ 1366  ls -l
+ 1367  diff Dockerfile Dockerfile.local
+ 1368  mv Dockerfile Dockerfile.cgi
+ 1369  mv Dockerfile.local Dockerfile
+ 1370  docker build -t mates/jason:0.9.5.3 .
+ 1371  docker ps | grep registry
+ 1372  docker build tag mates/jason:0.9.5.3 localhost:5000/jason:0.9.5.3
+ 1373  docker tag mates/jason:0.9.5.3 localhost:5000/jason:0.9.5.3
+ 1374  docker push localhost:5000/jason:0.9.5.3
+ 1375  cd ..
+ 1376  ls -l
+ 1377  cd mates-nginx/
+ 1378  ls -l
+ 1379  docker build -t mates/web-client:0.9.5.2 .
+ 1380  docker tag mates/web-client:0.9.5.2 localhost:5000/web-client:0.9.5.2
+ 1381  docker push  localhost:5000/web-client:0.9.5.2
+ 1382  ifconfig eth0
+ 1383  ifconfig wlan0
+ 1384  d localhost:5000/web-client:0.9.5.2
+ 1385  cd ..
+ 1386  ls -al
+ 1387  cd mates-jason/
+ 1388  ls -l
+ 1389  cat asl/soe_agent.asl | grep proceed
+ 1390  cp -r /media/sascha/0651FE757EA5F2E0/Sales-Kit64bit-a/ ~/Desktop/vm-bk-188
+ 1391  cp -r /media/sascha/0651FE757EA5F2E0/Sales-Kit64bit ~/Desktop/vm-old-bk-188/
+ 1392  rm -fr  ‘/media/sascha/0651FE757EA5F2E0/Sales-Kit64bit’
+ 1393  rm -fr  /media/sascha/0651FE757EA5F2E0/Sales-Kit64bit
+ 1394  dcfldd
+ 1395  sudo apt-get install dcfldd
+ 1396  ma ‘/media/sascha/0651FE757EA5F2E0/Sales-Kit64bit’n
+ 1397  man dcfldd
+ 1398  ##dcfldd conv=notrunc,noerror bs=4096 if=/dev/
+ 1399  cd /
+ 1400  dcfldd conv=notrunc,noerror bs=4096 if=/dev/sdc | gzip > ~/Desktop/sales-stick-backup
+ 1401  dcfldd conv=notrunc,noerror bs=4096 if=/dev/sdc1 | gzip > ~/Desktop/sales-stick-backup
+ 1402  sudo dcfldd conv=notrunc,noerror bs=4096 if=/dev/sdc1 | gzip > ~/Desktop/sales-stick-backup
+ 1403  sudo dcfldd conv=notrunc,noerror bs=4096 if=/dev/sdc | gzip > ~/Desktop/sales-stick-backup
+ 1404  sudo dcfldd if=/dev/sdc of=/home/sascha/sales-kit.iso bs=4096 conv=notrunc,noerror
+ 1405  sudo dcfldd if=/dev/sdc1 of=/home/sascha/sales-kit.iso bs=4096 conv=notrunc,noerror
+ 1406  sudo dcfldd if=/dev/sdc of=/home/sascha/sales-kit.iso bs=4096 conv=notrunc,noerror
+ 1407  ls -al /media/sascha/0651FE757EA5F2E0/
+ 1408  getPw gigamail github
+ 1409  mount
+ 1410  mount | grep sdc
+ 1411  cd /media/sascha/sd/
+ 1412  ls -l
+ 1413  getPw gigamail github
+ 1414  mount
+ 1415  cd /
+ 1416  getPw gigamail battle.net
+ 1417  cd ..
+ 1418  cd Repos/
+ 1419  ls -l
+ 1420  cd mates-w
+ 1421  cd mates-web-client/
+ 1422  ls -l
+ 1423  echo host.sh
+ 1424  cat host.sh
+ 1425  cd /var/lib/tomcat7/webapps/mates-web-client
+ 1426  ls -l
+ 1427  cat js/config.js
+ 1428  gedit js/config.js
+ 1429  sudo gedit js/config.js
+ 1430  bg
+ 1431  ls -l
+ 1432  cat host.sh
+ 1433  cp host.sh ~/Repos/mates-web-client/
+ 1434  cd ~/Repos/mates-web-client/
+ 1435  ls -l
+ 1436  ./host.sh
+ 1437  gedit js/config.js
+ 1438  ./host.sh
+ 1439  docker ps
+ 1440  docker ps -a | grep jason
+ 1441  cat host.sh
+ 1442  git pull origin
+ 1443  ./host.sh
+ 1444  docker images
+ 1445  docker images | grep jason
+ 1446  docker ps
+ 1447  docker images | grep jason
+ 1448  docker images | grep web
+ 1449  ls -l
+ 1450  docker ps
+ 1451  docker ps -a | grep rabbit
+ 1452  docker run mates-rabbitmq
+ 1453  docker start mates-rabbitmq
+ 1454  docker start mates-java-backend
+ 1455  docker run --name mates-jason-fallback -d mates/jason:0.9.1
+ 1456  ls -l
+ 1457  cd /media/sascha/0651FE757EA5F2E0/
+ 1458  ls -l
+ 1459  cd mates-vm/
+ 1460  ls -l
+ 1461  cd ..
+ 1462  cd .
+ 1463  cd .mates-source/
+ 1464  ls -l
+ 1465  cd Docker/
+ 1466  ls -l
+ 1467  cd mates-nginx/
+ 1468  ls -l
+ 1469  cd mates-web-client/
+ 1470  ls -l
+ 1471  git status
+ 1472  ls -l
+ 1473  cd ..
+ 1474  cp -r mates-nginx/ ~/Desktop/demo-18
+ 1475  cd ~/Desktop/demo-18/
+ 1476  ls -l
+ 1477  rm -fr mates-web-client/
+ 1478  cp -r ~/Repos/mates-web-client ./
+ 1479  ls -l
+ 1480  docker build -t mates/web-client:0.9.1.1 .
+ 1481  cd mates-web-client/
+ 1482  ls -l
+ 1483  gedit js/config.js
+ 1484  cd ..
+ 1485  docker build -t mates/web-client:0.9.1.1 .
+ 1486  docker ps
+ 1487  ls -l
+ 1488  mkdir nginx
+ 1489  mv Dockerfile nginx/
+ 1490  mv mates-web-client/ nginx/
+ 1491  cd nginx/
+ 1492  ls -l
+ 1493  gedt mates-web-client/js/config.jsn
+ 1494  gedt mates-web-client/js/config.js
+ 1495  gedit mates-web-client/js/config.js
+ 1496  docker build -t mates/web-client:0.9.1.1 .
+ 1497  docke run --name mates-web-client-fallback -p 8050:80 mates/web-client:0.9.1.1 
+ 1498  docker run --name mates-web-client-fallback -p 8050:80 mates/web-client:0.9.1.1 
+ 1499  docker stop mates-web-client-fallback
+ 1500  docker rm mates-web-client-fallback
+ 1501  docker run --name mates-web-client-fallback -p 8050:80 -d mates/web-client:0.9.1.1 
+ 1502  docker logs mates-java-backend
+ 1503  docker ps
+ 1504  gedit mates-web-client/js/config.js
+ 1505  docker stop mates-web-client-fallback
+ 1506  docker rm mates-web-client-fallback
+ 1507  docker build -t mates/web-client:0.9.1.1 .
+ 1508  docker run --name mates-web-client-fallback -p 8050:80 -d mates/web-client:0.9.1.1 
+ 1509  docker logs mates-java-backend
+ 1510  docker logs mates-jason-fallback
+ 1511  docker stop mates-jason-fallback
+ 1512  docker rm mates-jason-fallback
+ 1513  history | grep run | grep jason
+ 1514  docker run --name test -e HOST=172.17.42.1 -it mates/jason bash
+ 1515  history | grep run | grep jason
+ 1516  docker run --name mates-jason-fallback -e HOST=172.17.42.1 -d mates/jason:0.9.1 
+ 1517  docker restart mates-jason-fallback
+ 1518  ifconfig eth0
+ 1519  ifconfig wlan0
+ 1520  service tomcat restart
+ 1521  service tomcat7 restart
+ 1522  sudo service tomcat7 restart
+ 1523  docker
+ 1524  docker ps
+ 1525  docker stop mates-web-client-fallback
+ 1526  docker run --name mates-web-client-mobile -p 8050:80 mates/web-client:0.9.1.1 bash
+ 1527  docker stop mates-web-client-mobile
+ 1528  docker rm mates-web-client-mobile
+ 1529  docker run --name mates-web-client-mobile -p 8050:80 -it mates/web-client:0.9.1.1 bash
+ 1530  docker start mates-web-client-fallback
+ 1531  ls -l
+ 1532  cd Repos/
+ 1533  ls -l
+ 1534  cd mates-web-client/
+ 1535  gitk &
+ 1536  git pull origin
+ 1537  ls -l
+ 1538  docker logs mates-java-backenbd
+ 1539  docker logs mates-java-backend
+ 1540  docker run --name mates-jason-fix -e HOST=172.17.42.1 -it bash
+ 1541  docker run --name mates-jason-fix -e HOST=172.17.42.1 -it mates/jason:0.9.1 bash
+ 1542  exit
+ 1543  cd ~ 
+ 1544  cd Repos/
+ 1545  ls -
+ 1546  ls -l
+ 1547  cd mates-web-client/
+ 1548  ls -l
+ 1549  gitk &
+ 1550  cd ..
+ 1551  ifconfig docker0
+ 1552  ifconfig docker0
+ 1553  docker stop mates-jason-fallback
+ 1554  docker ps
+ 1555  docker stop mates-jason-fix
+ 1556  docker start mates-jason-fix
+ 1557  docker stop mates-jason-fix
+ 1558  docker rm mates-jason-fix
+ 1559  ifconfig
+ 1560  docker ps
+ 1561  ifconfig wlan0
+ 1562  getPw gigamail battle.net
+ 1563  getPw gigamail sharewise
+ 1564  getPw gigamail battle.net
+ 1565  exit
+ 1566  ls -l
+ 1567  cd workspace/
+ 1568  ls -l
+ 1569  cd Masterarbeit/
+ 1570  ls -l
+ 1571  git status
+ 1572  git add Helperfunctions.R 
+ 1573  gitk &
+ 1574  git branch -a
+ 1575  git status
+ 1576  git add elperfunctions.R
+ 1577  git add Helperfunctions.R 
+ 1578  git status
+ 1579  git commit -m "add comparision operator that uses pre-defined precision to avoid floating-point issues"
+ 1580  cd ..
+ 1581  cd Dropbox/Masterarbeit/
+ 1582  ls -l
+ 1583  git status
+ 1584  git init
+ 1585  ls -l
+ 1586  git status
+ 1587  git add main.tex 
+ 1588  vim .gitignore
+ 1589  git status
+ 1590  vim .gitignore
+ 1591  git status
+ 1592  vim .gitignore
+ 1593  git status
+ 1594  git add main.
+ 1595  git add main.tex 
+ 1596  git commit -m "first draft"
+ 1597  git status
+ 1598  cd Dropbox/Masterarbeit/
+ 1599  ls -l
+ 1600  git status
+ 1601  getPw gigamail yahoo
+ 1602  getPw gigamail google
+ 1603  getPw gigamail github
+ 1604  ps aux | grep firefox
+ 1605  getPw gigamail battle.net
+ 1606  sudo apt-get install ddosbox
+ 1607  sudo apt-get install dosbox
+ 1608  ls -l
+ 1609  cd Repos/
+ 1610  ls -l
+ 1611  cd toggl-button/
+ 1612  ls -l
+ 1613  cd src/
+ 1614  ls -l
+ 1615  cd scripts/
+ 1616  ls -l
+ 1617  cat content/github.js 
+ 1618  gedit content/github.js &
+ 1619  cd ..
+ 1620  git status
+ 1621  git branch -a
+ 1622  git pull origin
+ 1623  git remote -v
+ 1624  cd ..
+ 1625  cd toggl-button/
+ 1626  git remote add original https://github.com/toggl/toggl-button.git
+ 1627  git pull original
+ 1628  git pull original master
+ 1629  git status
+ 1630  git add src/scripts/content/github.js
+ 1631  git commit -m "my own fix for github"
+ 1632  git pull original master
+ 1633  ddosbox
+ 1634  dosbox
+ 1635  mkdir dos
+ 1636  mkdor dos/c
+ 1637  mkdir dos/c
+ 1638  dosbox
+ 1639  bg
+ 1640  ls -l /home/sascha/Downloads/
+ 1641  cd Downloads/
+ 1642  sudo apt-get install unrar
+ 1643  unrar bii\!.rar
+ 1644  mkdir biing
+ 1645  mv bii\!.rar biing/
+ 1646  cd biing/
+ 1647  unrar e bii\!.rar
+ 1648  dosbox
+ 1649  ls -l
+ 1650  dosbox \!start.bat
+ 1651  bg
+ 1652  cat README_AVISO.txt 
+ 1653  cat \!start.bat 
+ 1654  wine \!start.bat
+ 1655  cat \!start.bat 
+ 1656  ##wine "dosbox -conf dosbox.confs
+ 1657  cat \!start.bat 
+ 1658  wine "dosbox.exe -conf dosbox.conf"
+ 1659  cat dosbox.conf 
+ 1660  man dosbox
+ 1661  dosbox -conf dosbox.conf 
+ 1662  gedit dosbox.conf 
+ 1663  dosbox 
+ 1664  pdmidi -l
+ 1665  sudo apt-get install pmidi
+ 1666  pmidi -l
+ 1667  dosbox -conf dosbox.conf 
+ 1668  export SDL_AUDIODRIVER=pulse
+ 1669  dosbox -conf dosbox.conf 
+ 1670  sdl
+ 1671  dosbox -conf dosbox.conf 
+ 1672  getPw gigamail battle.net
+ 1673  ls -l
+ 1674  cd Downloads/biing/
+ 1675  dosbox -conf dosbox.conf
+ 1676  getPw gigamail battle.net
+ 1677  getPw gigamail xing
+ 1678  sudo apt-get install pulseaudio
+ 1679  sudo apt-get install alsainfo
+ 1680  wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
+ 1681  cat /tmp/alsa-info.txt.4G70BV7RGN 
+ 1682  sudo /etc/init.d/pulseaudio restart
+ 1683  cat /tmp/alsa-info.txt.4G70BV7RGN 
+ 1684  vim /tmp/alsa-info.txt.4G70BV7RGN 
+ 1685  alsactl init
+ 1686  sudo apt-get install alsa-base
+ 1687  cat /proc/asound/cards 
+ 1688  alsa reload
+ 1689  sudo alsa reload
+ 1690  alsamixer
+ 1691  sudo apt-get remove --purge alsa-base pulseaudio
+ 1692  sudo apt-get install alsa-base pulseaudio
+ 1693  sudo alsa force-reload
+ 1694  alsamixer
+ 1695  pulseaudio 
+ 1696  sudo pulseaudio 
+ 1697  pulseaudio 
+ 1698  alsa reload
+ 1699  sudo alsa reload
+ 1700  banshee 
+ 1701  sudo apt-get update
+ 1702  sudo apt-get install system-settings
+ 1703  sudo apt-get install ubuntu-desktop
+ 1704  cd Projects/bashLog/
+ 1705  ls -l
+ 1706  cd commands/
+ 1707  touch a
+ 1708  touch b
+ 1709  echo "test" > a
+ 1710  echo "blulb" > b
+ 1711  echo "blulb" > a
+ 1712  echo "blulb" > g
+ 1713  echo "blulb" > t
+ 1714  echo "blulb" > d
+ 1715  echo "blulb" > t
+ 1716  echo "blulb" > d
+ 1717  echo "blulb" > t
+ 1718  echo "blulb" > g
+ 1719  echo "blulb" > a
+ 1720  echo "blulb" > g
+ 1721  echo "blulb" > f
+ 1722  echo "blulb" > asdfasdfsdf
+ 1723  cd Projects/
+ 1724  ls -l
+ 1725  cd ConfProvider/
+ 1726  ls -l
+ 1727  cd ..
+ 1728  ls -l
+ 1729  ls ../Repos/
+ 1730  ls -l
+ 1731  cd Bashapp/
+ 1732  ls -l
+ 1733  find commands/
+ 1734  cat test.
+ 1735  cat test.log 
+ 1736  ls -l
+ 1737  gedit lastCmd.sh 
+ 1738  bg
+ 1739  gedit logHistory.sh 
+ 1740  cd ..
+ 1741  ls -l
+ 1742  docker ps
+ 1743  docker ps -a
+ 1744  docker ps -a | grep note
+ 1745  docker start  noteApp
+ 1746  docker ps
+ 1747  docker logs noteApp
+ 1748  docker inspect noteApp
+ 1749  docker inspect noteApp | grep IPA
+ 1750  cd ..
+ 1751  ls -l
+ 1752  cd Notes/
+ 1753  ls -l
+ 1754  find . -type f | xargs grep bash
+ 1755  find . -type f | grep ash
+ 1756  find . -type f | xargs grep ash
+ 1757  inboxls -al
+ 1758  ls -al
+ 1759  find .
+ 1760  cat ifelseshorthand 
+ 1761  find .
+ 1762  ##inboxinboxinboxinboxinboxcd inboxT
+ 1763  docker ps -a | grep ote
+ 1764  cd ..
+ 1765  cd Projects/
+ 1766  ls -l
+ 1767  cd NoteApp/
+ 1768  ls -l
+ 1769  cd test/
+ 1770  ls -l
+ 1771  cd ..
+ 1772  ls -l
+ 1773  cd NoteKeep/
+ 1774  ls -l
+ 1775  cd ..
+ 1776  ls -l
+ 1777  cd ..
+ 1778  cd Repos/
+ 1779  ls -l
+ 1780  cd ..
+ 1781  ls -l
+ 1782  cd notes/
+ 1783  ls -l
+ 1784  cd ..
+ 1785  diff notes/ Notes/
+ 1786  diff -r notes/ Notes/
+ 1787  cd notes/test
+ 1788  cat notes/test 
+ 1789  cd notes/
+ 1790  ls -l
+ 1791  gitk
+ 1792  gnome-activity-journal 
+ 1793  getPw gigamail battle.net
+ 1794  ls -l
+ 1795  cd Projects/
+ 1796  ls -l
+ 1797  cd Bashapp/
+ 1798  history | grep yeoman
+ 1799  history | grep yo
+ 1800  yo
+ 1801  yo angular-fullstack bashlog
+ 1802  du -sh *
+ 1803  ls -l
+ 1804  grunt serve
+ 1805  docker ps -a | grep ongo
+ 1806  docker start test-mongo
+ 1807  grunt serve
+ 1808  cd ..
+ 1809  mkdir BashLog
+ 1810  cd Bash
+ 1811  cd BashLog/
+ 1812  ls -l
+ 1813  npm install websocket
+ 1814  cd ..
+ 1815  mv BashLog/ ChatExample
+ 1816  cd ChatExample/
+ 1817  ls -l
+ 1818  node chat-server.js 
+ 1819  cat file:///home/sascha/Projects/ChatExample/chat-frontend.js
+ 1820  cat /home/sascha/Projects/ChatExample/chat-frontend.js
+ 1821  ls -l
+ 1822  cp ../ConfProvider/http-server/lib/http-server.js ./
+ 1823  node http-server.js 
+ 1824  ls -l
+ 1825  npm install union
+ 1826  npm install ecstatic
+ 1827  node http-server.js 
+ 1828  mkdir public
+ 1829  mv frontend.html public/
+ 1830  mv chat-frontend.js  public/
+ 1831  find ../ConfProvider/
+ 1832  cd ConfProvider/http-server/
+ 1833  ls -l
+ 1834  cat README.md 
+ 1835  ls -l
+ 1836  node lib/http-server.js 
+ 1837  ps aux | grep node
+ 1838  kill 11206
+ 1839  sudo kill 11206
+ 1840  sudo kill 3654
+ 1841  node lib/http-server.js 
+ 1842  ps aux | grep node
+ 1843  find bin/
+ 1844  cd ..
+ 1845  cd ChatExample/
+ 1846  cp -r ../ConfProvider/http-server/bin/ ./
+ 1847  node bin/http-server 
+ 1848  npm install colors
+ 1849  node bin/http-server
+ 1850  ls -l
+ 1851  mkdir lib
+ 1852  mv http-server.js lib/
+ 1853  node bin/http-server
+ 1854  npm install optimist
+ 1855  node bin/http-server
+ 1856  npm install portfinder
+ 1857  node bin/http-server
+ 1858  npm install opener
+ 1859  node bin/http-server
+ 1860  ls -l
+ 1861  node server.js 
+ 1862  npm install express
+ 1863  node server.js 
+ 1864  npm install connect-form
+ 1865  node server.js 
+ 1866  ls -l
+ 1867  find lib/
+ 1868  npm install formidable
+ 1869  npm install connect-form
+ 1870  node server.js 
+ 1871  npm install multipart
+ 1872  npm install url
+ 1873  npm install sys events posix
+ 1874  node server.js 
+ 1875  cd ..
+ 1876  ls -l
+ 1877  mkdir Bashlog
+ 1878  sudo npm install -g express
+ 1879  ls -l
+ 1880  rm -fr Bashlog/
+ 1881  express bashLog
+ 1882  sudo apt-get install node-express
+ 1883  n
+ 1884  o
+ 1885  express bashLog
+ 1886  cd bashLog/
+ 1887  ls -l
+ 1888  npm install
+ 1889  node app.js 
+ 1890  git init
+ 1891  git add .
+ 1892  ls -l
+ 1893  git status
+ 1894  git commit -m "demo version"
+ 1895  git status
+ 1896  node app.js 
+ 1897  npm install socket.io
+ 1898  node app.js 
+ 1899  ls -l
+ 1900  cd public/
+ 1901  ls -l
+ 1902  echo "test" > test.html
+ 1903  node app.js 
+ 1904  cd ..
+ 1905  node app.js 
+ 1906  rm public/test.html 
+ 1907  git status
+ 1908  ls -l
+ 1909  mkdir commands
+ 1910  git status
+ 1911  ls -l
+ 1912  git status
+ 1913  git add app.js
+ 1914  git add node_modules/socket.io/
+ 1915  git commit -m "simple socket.io implementation"
+ 1916  ls -l
+ 1917  node app.js 
+ 1918  ls -l
+ 1919  find commands/
+ 1920  node app.js 
+ 1921  git status
+ 1922  git add  app.js
+ 1923  git commit 
+ 1924  git status
+ 1925  ls -l
+ 1926  cd public/
+ 1927  ls -lA
+ 1928  cp ../../ChatExample/public/receiver.html ./frontend.html
+ 1929  cp ../../ChatExample/public/receiver.js ./javascripts/frontend.js
+ 1930  cp ../../ChatExample/public/main.css ./stylesheets/main.css
+ 1931  ls -l
+ 1932  cd ..
+ 1933  ls -l
+ 1934  node app.js 
+ 1935  cd Projects/Bashapp/
+ 1936  sublime app/scripts/app.js 
+ 1937  cd ..
+ 1938  cd BashLog/
+ 1939  sublime chat-server.js
+ 1940  cd ..
+ 1941  cd ChatExample/
+ 1942  ls -l
+ 1943  sublime chat-frontend.js
+ 1944  bg
+ 1945  ls -l
+ 1946  node chat-server.js 
+ 1947  ls -l
+ 1948  mv receiver.js public/
+ 1949  ls public/
+ 1950  rm public/frontend.html 
+ 1951  mv sender.js public/sender.js
+ 1952  ls public/
+ 1953  ls -l
+ 1954  cat public/receiver.js 
+ 1955  cat public/receiver.html 
+ 1956  cat public/sender.js 
+ 1957  cat publi
+ 1958  cat public/sender.html 
+ 1959  node chat-server.js 
+ 1960  history
+ 1961  cd Projects/
+ 1962  ls -l
+ 1963  cd Bashapp/
+ 1964  ls -l
+ 1965  cd commands/
+ 1966  ls -l
+ 1967  cat 17-08-14-144
+ 1968  cat *
+ 1969  history
+ 1970  cd ..
+ 1971  ls -l
+ 1972  cd ..
+ 1973  ls -l
+ 1974  cd ChatExample/
+ 1975  ls -l
+ 1976  cd lib/
+ 1977  ls -l
+ 1978  cd ..
+ 1979  ls -l
+ 1980  cd public/
+ 1981  ls -l
+ 1982  cp ~/Downloads/html2canvas.js ./
+ 1983  getPw gigamail battle.net
+ 1984  cd /media/sascha/0651FE757EA5F2E0/
+ 1985  ls -l
+ 1986  ls -al
+ 1987  cd .mates-source/
+ 1988  ls -l
+ 1989  cd ..
+ 1990  ls -al
+ 1991  cd MATES/
+ 1992  ls -l
+ 1993  cd mates-parent/
+ 1994  gitk
+ 1995  cd ..
+ 1996  cp -r mates-parent/ ~/Repos/mates-parent
+ 1997  exit
+ 1998  blul
+ 1999  echo
+ 2000  rm /tmp/history 
+ 2001  ls -l
+ 2002  mkdir backup
+ 2003  history > backup/`date`
+ 2004  history > backup/history_bkp

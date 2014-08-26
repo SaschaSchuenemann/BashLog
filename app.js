@@ -6,7 +6,9 @@
 var express = require('express')
   , routes = require('./routes')
   , socket = require('socket.io')
-  , fs = require('fs');
+  , fs = require('fs')
+  , readline = require('readline')
+  , stream = require('stream');
 
 var app = module.exports = express.createServer();
 
@@ -48,10 +50,13 @@ io.sockets.on('connection', function (socket) {
 */
 
 var commandDir = './commands/';
+var historyDir = './history/';
 
 
-// use timer intervall to read periodically the commands dir
+// use timer intervall to read the command dirctories
 setInterval(function() { 
+
+  // read single commands dir
   fs.readdir(commandDir, function (err,files){
     // step through all command files
     for (var i=0; i<files.length;i++){
@@ -78,5 +83,46 @@ setInterval(function() {
       fs.unlinkSync(commandDir+files[i]);
     }
   });
+
+  // read history files dir
+  fs.readdir(historyDir, function (err,files){
+  // step through all command files
+    for (var i=0; i<files.length;i++){
+      console.log('Processing ' + files[i]);
+      var _historyFile = JSON.parse( JSON.stringify( files[i] ) );
+      var instream = fs.createReadStream(historyDir+_historyFile);
+      var outstream = new stream;
+      var rl = readline.createInterface(instream, outstream);
+
+      var removeFile = function(file){
+        console.log("finished reading: " + file);
+        fs.unlinkSync(historyDir+file);
+      }
+
+      rl.on('line', function(line) {
+        console.log('Processing line: ' + line);
+        var regex = /([0-9]+) (.*)/
+        var result = line.match(regex);
+        var _id = result[1];
+        var _cmd = result[2];
+
+        var data = {
+          id:_id,
+          cmd:_cmd
+        };
+        console.log(_id + ': ' + _cmd);
+
+        io.sockets.emit('new',data);
+
+
+      });
+
+      rl.on('close', function(){
+        removeFile(_historyFile);
+      });
+    }
+  });
+
+
   console.log("setInterval: It's been one second!"); 
 }, 1000);

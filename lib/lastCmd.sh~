@@ -1,0 +1,16 @@
+#!/bin/bash
+
+asSingleFile=false
+commandsDir="/home/sascha/Projects/bashLog/commands"
+#commandFile="commandsFile"
+commandFile=``date +%d-%m-%y-%H%M%S`
+
+lastCommand="`cat /tmp/history | sed -e 's/ [0-9]* //' | sort | uniq -u`"
+
+
+
+
+if [[ ! -d $lastCommand ]] && [[ ! $lastCommand == "" ]]; then
+ echo $lastCommand >> "$commandsDir/commandsFile"
+fi
+
