@@ -34,20 +34,12 @@ app.configure('production', function(){
 });
 
 // Routes
-
 app.get('/', routes.index);
 
 app.listen(3000, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });
 
-/*
-io.sockets.on('connection', function (socket) {
-  socket.on('msg', function (data) {
-    io.sockets.emit('new', data);
-  });
-});
-*/
 
 var commandDir = './commands/';
 var historyDir = './history/';
@@ -62,8 +54,6 @@ setInterval(function() {
     for (var i=0; i<files.length;i++){
       // copy file name so that async remove function can use reference
       var _commandFile = JSON.parse( JSON.stringify( files[i] ) );
-
-
 
       // read file content
       var _commandContent = (fs.readFileSync(commandDir+files[i], 'utf8'));
@@ -114,7 +104,6 @@ setInterval(function() {
 
         io.sockets.emit('new',data);
 
-
       });
 
       rl.on('close', function(){
@@ -122,7 +111,4 @@ setInterval(function() {
       });
     }
   });
-
-
-  console.log("setInterval: It's been one second!"); 
 }, 1000);
