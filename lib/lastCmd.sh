@@ -1,7 +1,8 @@
 #!/bin/bash
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 asSingleFile=false
-commandsDir="/home/sascha/Projects/bashLog/commands"
+commandsDir="$DIR/../commands"
 #commandFile="commandsFile"
 commandFile=`date +%d-%m-%y-%H%M%S`
 
@@ -11,6 +12,6 @@ lastCommand="`cat /tmp/history | sed -e 's/ [0-9]* //' | sort | uniq -u`"
 
 
 if [[ ! -d $lastCommand ]] && [[ ! $lastCommand == "" ]]; then
- echo $lastCommand >> "$commandsDir/commandsFile"
+ echo $lastCommand > "$commandsDir/$commandFile"
 fi
 
