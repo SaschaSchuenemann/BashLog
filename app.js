@@ -39,11 +39,13 @@ app.listen(3000, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });
 
+/*
 io.sockets.on('connection', function (socket) {
   socket.on('msg', function (data) {
     io.sockets.emit('new', data);
   });
 });
+*/
 
 var commandDir = './commands/';
 
@@ -56,14 +58,21 @@ setInterval(function() {
       // copy file name so that async remove function can use reference
       var _commandFile = JSON.parse( JSON.stringify( files[i] ) );
 
+
+
       // read file content
       var _commandContent = (fs.readFileSync(commandDir+files[i], 'utf8'));
+
+      var data = {
+          id:_commandFile,
+          cmd:_commandContent
+      };
 
       // print content on console (for debug purposes only)
       console.log(_commandFile + ': ' + _commandContent);
 
       // send content to all registred clients
-      io.sockets.emit('new',_commandContent);
+      io.sockets.emit('new',data);
       
       // remove commandFile, use sync because otherwise the file might still exist in the next run
       fs.unlinkSync(commandDir+files[i]);

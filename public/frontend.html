@@ -4,173 +4,38 @@
         <meta charset="utf-8">
         <title>WebSockets - Simple chat</title>
         <LINK href="./stylesheets/main.css" rel="stylesheet" type="text/css"> 
+        <script src="./javascripts/jquery-2.1.1.min.js"></script>
+        <!-- <script src="./javascripts/history.js"></script>-->
+    
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
 
     </head>
-    <body>
+   <body>
         <div id="header">
-            This is my Header
+            <div id="title">
+            Bash History
+        </div>
+            <div id="exportBtn">
+                Export
+            </div>
+            
         </div>
         <div id="content">
-            <input type="submit" value="Take Screenshot Of Div" onclick="capture();" />
-            <form method="POST" enctype="multipart/form-data" class="myForm">
-                <input type="hidden" name="img_val" class="img_val" value="Upload" />
-            </form>
-            <div class="command red-cell">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
+            
+            <!--
+            <div class="command" id="c1">wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
             </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command">
-                wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
+            <div class="command" id="c2">hostname</div>
+            <div class="command" id="c3">export USER="test"</div>
+            <div class="command" id="c4">echo $USER</div>
+            <div class="command" id="c5">cd /home/sascha</div>
+            <div class="command" id="c6">ls -al</div>
+            <div class="command" id="c7">wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh</div>
+           -->
         </div>
-        <div class="status">
+        <div id="status">
             Connection Status
         </div>
- 
-        <script src="./javascripts/jquery-2.1.1.min.js"></script>
         <script src="./javascripts/frontend.js"></script>
         <!--
         <script src="./html2canvas.js"></script>
