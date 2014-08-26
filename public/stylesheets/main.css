@@ -37,7 +37,7 @@ html, body {height: 100%; width: 500px; min-width: 400px; margin:0px !important;
 #title {
   padding-top: 3px;
   float:left; /* add this */
-  width:80%;
+  width:60%;
   height:100%;
 }
 
@@ -47,6 +47,34 @@ p {
 div { 
   margin-left:auto; 
   margin-right:auto;
+}
+
+#buttonWrapper{
+  overflow: hidden;
+  position: relative;
+  top: 0; 
+  width:40%;
+}
+
+#toggleAllBtn{
+   margin-top:1px;
+  margin-bottom:1px;
+  margin-right:2px;
+  margin-bottom:1px;
+  padding-top: 2px;
+  padding-left:3px;
+  padding-bottom: 2px;
+  float:left; /* add this */
+  position: relative;
+  top: 0;
+  width:40%;
+  background-color: #ffffff;
+  height:18px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  border-radius: 5px;
+     
 }
 
 
@@ -61,7 +89,7 @@ div {
   overflow: hidden;
   position: relative;
   top: 0;
-  width:15%;
+  width:40%;
   background-color: #ffffff;
   height:18px;
   border-style: solid;

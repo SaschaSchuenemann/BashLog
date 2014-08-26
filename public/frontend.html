@@ -3,9 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>WebSockets - Simple chat</title>
-        <LINK href="./stylesheets/main.css" rel="stylesheet" type="text/css"> 
+        <link href="./stylesheets/main.css" rel="stylesheet" type="text/css"> 
         <script src="./javascripts/jquery-2.1.1.min.js"></script>
-        <!-- <script src="./javascripts/history.js"></script>-->
     
         <script type="text/javascript" src="/socket.io/socket.io.js"></script>
 
@@ -15,32 +14,20 @@
             <div id="title">
             Bash History
         </div>
+        <div id="buttonWrapper">
+             <div id="toggleAllBtn">Select All</div>
             <div id="exportBtn">
                 Export
             </div>
+        </div>
             
         </div>
         <div id="content">
-            
-            <!--
-            <div class="command" id="c1">wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh
-            </div>
-            <div class="command" id="c2">hostname</div>
-            <div class="command" id="c3">export USER="test"</div>
-            <div class="command" id="c4">echo $USER</div>
-            <div class="command" id="c5">cd /home/sascha</div>
-            <div class="command" id="c6">ls -al</div>
-            <div class="command" id="c7">wget http://www.alsa-project.org/alsa-info.sh -O alsa-info.sh && bash alsa-info.sh</div>
-           -->
+
         </div>
         <div id="status">
-            Connection Status
+            Copyright: Sascha Schuenemann
         </div>
         <script src="./javascripts/frontend.js"></script>
-        <!--
-        <script src="./html2canvas.js"></script>
-        
-        
-    -->
     </body>
 </html>
