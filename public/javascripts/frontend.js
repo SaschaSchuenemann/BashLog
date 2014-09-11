@@ -8,6 +8,13 @@ $(document).on('click', '.command' , function() {
      $(this).toggleClass("selected");
 });
 
+// clear commands
+$('#clearBtn').click( function() {
+    console.log('Clearing all commands');
+    // add file to dom
+  $('#content').empty();
+});
+
 // (de-)select all command elements
 $('#toggleAllBtn').click( function() {
     

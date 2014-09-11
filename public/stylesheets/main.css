@@ -67,7 +67,7 @@ div {
   float:left; /* add this */
   position: relative;
   top: 0;
-  width:40%;
+  width:30%;
   background-color: #ffffff;
   height:18px;
   border-style: solid;
@@ -86,10 +86,10 @@ div {
   padding-top: 2px;
   padding-left:3px;
   padding-bottom: 2px;
-  overflow: hidden;
+  float:left; /* add this */
   position: relative;
   top: 0;
-  width:40%;
+  width:30%;
   background-color: #ffffff;
   height:18px;
   border-style: solid;
@@ -97,6 +97,26 @@ div {
   border-color: #000000;
   border-radius: 5px;
     
+}
+
+#clearBtn {
+  margin-top:1px;
+  margin-bottom:1px;
+  margin-right:2px;
+  margin-bottom:1px;
+  padding-top: 2px;
+  padding-left:3px;
+  padding-bottom: 2px;
+  float:left; /* add this */
+  position: relative;
+  top: 0;
+  width:30%;
+  background-color: #ffffff;
+  height:18px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  border-radius: 5px;
 }
 
 .selected {
