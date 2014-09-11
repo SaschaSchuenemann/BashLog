@@ -16,9 +16,11 @@ Run the app from the main directory
 
 If you want to monitor a single shell run
 
-`PROMPT_COMMAND="history >> /tmp/history; $BASHLOG_DIR/lib/lastCmd.sh"`
+`PROMPT_COMMAND="history -a; $BASHLOG_DIR/lib/lastCmd.sh"`
 
 Now every command you enter ( in the same shell ) gets copied to the commands dir within $BASHLOG_DIR and will eventually get picked up by the node instance and hence displayed on the App. Currently, the bash-script only displays the unique commands. 
+
+If entering the above prompt command in a second shell, you will get also the commands entered there. By exporting it in the bash_rc file, you can automatically active the logging. Just make sure that the node.js app is running. In the future there might be a small daemon script to automate the loading of the webApp.
 
 If one wants to select from a whole history file, just pipe it into the history directory
 
