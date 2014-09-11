@@ -5,13 +5,15 @@ asSingleFile=false
 commandsDir="$DIR/../commands"
 #commandFile="commandsFile"
 commandFile=`date +%d-%m-%y-%H%M%S`
+sndLastCmdFile=$DIR/secondLastCmd
 
-lastCommand="`cat /tmp/history | sed -e 's/ [0-9]* //' | sort | uniq -u`"
+lastCommand="`tail -n 1 ~/.bash_history`"
 
 
 
 
-if [[ ! -d $lastCommand ]] && [[ ! $lastCommand == "" ]]; then
+if [[ ! -d $lastCommand ]] && [[ ! $lastCommand == "`cat $sndLastCmdFile`" ]]; then
  echo $lastCommand > "$commandsDir/$commandFile"
+ echo $lastCommand > $sndLastCmdFile
 fi
 
