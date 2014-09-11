@@ -37,7 +37,7 @@ html, body {height: 100%; width: 500px; min-width: 400px; margin:0px !important;
 #title {
   padding-top: 3px;
   float:left; /* add this */
-  width:60%;
+  width:30%;
   height:100%;
 }
 
@@ -53,7 +53,7 @@ div {
   overflow: hidden;
   position: relative;
   top: 0; 
-  width:40%;
+  width:70%;
 }
 
 #toggleAllBtn{
@@ -64,10 +64,11 @@ div {
   padding-top: 2px;
   padding-left:3px;
   padding-bottom: 2px;
-  float:left; /* add this */
+  float:right; /* add this */
   position: relative;
   top: 0;
   width:30%;
+  max-width:100px;
   background-color: #ffffff;
   height:18px;
   border-style: solid;
@@ -86,10 +87,11 @@ div {
   padding-top: 2px;
   padding-left:3px;
   padding-bottom: 2px;
-  float:left; /* add this */
+  float:right; /* add this */
   position: relative;
   top: 0;
   width:30%;
+  max-width:100px;
   background-color: #ffffff;
   height:18px;
   border-style: solid;
@@ -107,10 +109,11 @@ div {
   padding-top: 2px;
   padding-left:3px;
   padding-bottom: 2px;
-  float:left; /* add this */
+  float:right; /* add this */
   position: relative;
   top: 0;
   width:30%;
+  max-width:100px;
   background-color: #ffffff;
   height:18px;
   border-style: solid;
