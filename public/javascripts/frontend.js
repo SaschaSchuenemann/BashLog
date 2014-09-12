@@ -159,6 +159,19 @@ $('#exportBtn').click( function() {
     //TODO: send picture files to backend
     });
 
+    var d = new Date();
+
+    var month = d.getMonth()+1;
+    var day = d.getDate();
+    var hour = d.getHours();
+    var minutes = d.getMinutes();
+
+    var dateString = d.getFullYear() + '/' +
+    (month<10 ? '0' : '') + month + '/' +
+    (day<10 ? '0' : '') + day + '/' + 
+    hour + '/' +
+    minutes;
+
 
     // write text log file
     console.log("Logfile: \n" + logFile);
@@ -167,9 +180,9 @@ $('#exportBtn').click( function() {
     console.log("HTML Code: \n" + codeFile);
 
     // download files
-    download("log.txt",logFile);
+    download("log-"+dateString+".txt",logFile);
 
-    download("code.html", codeFile);
+    download("code-"+dateString+".html", codeFile);
 
 });
 
