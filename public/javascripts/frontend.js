@@ -6,6 +6,7 @@ var socket = null;
 // select item when 
 $(document).on('click', '.command' , function() {
      $(this).toggleClass("selected");
+     selectText(this);
 });
 
 // clear commands
@@ -14,6 +15,18 @@ $('#clearBtn').click( function() {
     // add file to dom
   $('#content').empty();
 });
+
+var selectText = function(container) {
+        if (document.selection) {
+            var range = document.body.createTextRange();
+            range.moveToElementText(container);
+            range.select();
+        } else if (window.getSelection) {
+            var range = document.createRange();
+            range.selectNode(container);
+            window.getSelection().addRange(range);
+        }
+    }
 
 // (de-)select all command elements
 $('#toggleAllBtn').click( function() {
@@ -60,7 +73,7 @@ var createHtmlElem = function(command){
         el+=" text-decoration: none;";
         el+=' font-family: "Courier New", Courier, monospace;';
         el+=" font-size: small;";
-    el+='\'># ';
+    el+='\'> ';
     el+=command;
     el+="</div>";
 
